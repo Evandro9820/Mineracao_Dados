@@ -69,10 +69,15 @@ print(
             "Medal": "Medalha",
             "Age": "Idade",
             "height": "Altura",
-        }
+        },
+        inplace=True,
     )
 )
 
-print(novo_dados["Medal"].value_counts())
-print(novo_dados["Event"].value_counts())
-print(novo_dados["Sex"].value_counts())
+print(novo_dados["Medalha"].value_counts())
+print()
+print(novo_dados["Evento"].value_counts())
+print()
+print(novo_dados["Sexo"].value_counts())
+print()
+print(novo_dados["Cidade"].value_counts())
