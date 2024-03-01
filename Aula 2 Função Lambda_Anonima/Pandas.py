@@ -42,11 +42,37 @@ print()
 
 
 dado2 = pd.read_csv(
-    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/dados2.csv"
+    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados2.csv"
 )
 print(dado2)
 
 dado = pd.read_excel(
-    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/dados.xlsx"
+    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados.xlsx"
 )
 print(dado)
+
+novo_dados = pd.read_csv(
+    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
+)
+
+print(novo_dados.head(7))
+
+print(
+    novo_dados.rename(
+        columns={
+            "Year": "Ano",
+            "City": "Cidade",
+            "Name": "Nome",
+            "Sex": "Sexo",
+            "Sport": "Esporte",
+            "Event": "Evento",
+            "Medal": "Medalha",
+            "Age": "Idade",
+            "height": "Altura",
+        }
+    )
+)
+
+print(novo_dados["Medal"].value_counts())
+print(novo_dados["Event"].value_counts())
+print(novo_dados["Sex"].value_counts())
