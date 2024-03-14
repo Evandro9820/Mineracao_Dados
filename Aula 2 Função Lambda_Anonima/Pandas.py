@@ -42,17 +42,21 @@ print()
 
 
 dado2 = pd.read_csv(
-    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados2.csv"
+    # "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados2.csv"
+    "/home/dark/Documentos/Repositórios/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
 )
 print(dado2)
 
 dado = pd.read_excel(
-    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados.xlsx"
+    "/home/dark/Documentos/Repositórios/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
+    # "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/dados.xlsx"
 )
+
 print(dado)
 
 novo_dados = pd.read_csv(
-    "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
+    # "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
+    "/home/dark/Documentos/Repositórios/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
 )
 
 print(novo_dados.head(7))

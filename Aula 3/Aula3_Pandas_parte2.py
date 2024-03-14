@@ -2,9 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-dados = pd.read_csv(
+""" dados = pd.read_csv(
     "C:/Users/darks/OneDrive/Documents/Repositório/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
-)
+) """  # Caminho do Windows
+
+dados = pd.read_csv(
+    "/home/dark/Documentos/Repositórios/Mineracao_Dados/Aula 2 Função Lambda_Anonima/DataSets/athlete_events.csv"
+)# Caminho do Arquivo no Linux
+
 
 """ print(
     dados.rename(
